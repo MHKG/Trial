@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class MultithreadingDemo implements Runnable {
 	public void run() {
 		try {
@@ -13,8 +11,7 @@ class MultithreadingDemo implements Runnable {
 
 public class Multithreading {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
+		int n = 8;
 		for(int i = 0; i < n; i++) {
 			Thread obj = new Thread(new MultithreadingDemo());
 			obj.start();
