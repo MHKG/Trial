@@ -6,7 +6,6 @@ public class AlphabetCounter {
 		String inputString = "Hello World";
 		Map<Character, Integer> alphabetCounts = countAllAlphabets(inputString);
 
-		// Display the counts
 		for (char alphabet = 'A'; alphabet <= 'Z'; alphabet++) {
 			int count = alphabetCounts.getOrDefault(alphabet, 0);
 			if (count > 0) {
